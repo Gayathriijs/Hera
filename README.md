@@ -2,27 +2,37 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# HERA : Smart travel safety for women.
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Gama
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Gayathri J S - TocH Institute of Science and Technology 
+- Member 2: Manna Grace Philip - TocH Institute of Science and Technology 
 
 ### Hosted Project Link
-[mention your project hosted link here]
-
+- Frontend: https://hera-xi.vercel.app/
+- Backend: https://hera-zd4e.vercel.app/
 ### Project Description
-[2-3 lines about what your project does]
+HERA is a hyper-local, community-driven safety ecosystem designed for women navigating urban environments. By synthesizing real-time community feedback, police patrol data, and environmental factors, HERA provides a "Safety Intelligence" layer over traditional navigation and travel planning
 
 ### The Problem statement
-[What problem are you solving?]
+Women travelling to urban centers like Kochi often lack reliable, real-time information regarding the safety of specific routes, accommodations, and public zones. Existing navigation tools optimize for the fastest route, but completely ignore the safest route, leaving users vulnerable to poorly-lit areas, low-patrol zones, and historically unsafe corridors during late hours or festivals.
 
 ### The Solution
-[How are you solving it?]
+We have engineered a five-pillar solution to address urban vulnerability:
+
+Safe Travel (Intelligent Routing): Beyond standard maps, HERA provides a safety-first navigation perspective and also provide safe transport.
+
+Safe Stay (Verified Accommodations): A curated directory of Hostels, PGs, and Hotels that have been community-vetted for female-specific security features like 24/7 surveillance and women-only floors.
+
+Locations (Curated Safe Zones): A searchable database of "High Safety Pulse" areas in Kochi, allowing users to identify secure hubs before they even leave their homes.
+
+Community Reviews: A transparent feedback loop where users share live safety ratings. This peer-to-peer data protects the next traveler through collective vigilance.
+
+Emergency Services: A high-priority emergency hub that connects users to the Pink Police, medical services and other emergency servicves.
 
 ---
 
@@ -31,25 +41,42 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Languages used: Frontend - Javascript,
+                  Backend - Python,
+                  Database - Mongodb
+- Frameworks used: Frontend - React 18, Backend - Flask
+- Libraries used: Frontend - Tailwind CSS, Framer Motion, Lucide-React, React-Leaflet / Leaflet.js, React Router DOM, Axios
+- Tools used: VS Code, Git
 
 ---
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+Key features of Hera:
+
+- Feature 1: Smart Safe-Travel Navigation
+
+An interactive geospatial dashboard that prioritizes user security over transit speed. It identifies well-lit routes and high-patrol corridors, helping users avoid isolated or poorly rated areas in real-time.
+
+- Feature 2: Verified "Pink" Stays & Hubs
+
+A curated database of women-only hostels, PGs, and boutique hotels. Each location is vetted based on community feedback regarding 24/7 security presence, female-staff ratios, and guest safety protocols.
+
+- Feature 3: Community Intelligence (Safety Pulse)
+
+A transparent review ecosystem that allows users to report live safety conditions—such as street lighting quality or crowd density. This peer-to-peer data creates a "Safety Pulse" that protects the next traveler.
+
+- Feature 4: High-Priority Emergency Hub (Zero-Latency SOS)
+
+A dedicated emergency interface featuring a pulsing SOS trigger. With one tap, the system initiates an "Emergency Aura" UI mode and provides immediate access to Kochi's Pink Police and medical services with live coordinate sharing.
+
+- Feature 5: Hyper-Local Safety Search
+
+A normalized search engine tailored for Kochi's geography. It allows users to analyze specific neighborhoods (like Fort Kochi or Edapally) to receive a comprehensive safety report before they even depart.
+
+- Feature 6: Secure Transit & Travel Logistics
+
+Integrated travel safety modules that provide real-time guidance on safe transit options. This includes vetting public transport routes and suggesting time-sensitive travel windows based on community-reported safety trends and historical data.
 
 ---
 
@@ -59,62 +86,145 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[Installation commands - npm install, pip install -r requirements.txt]
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+[Run commands -  npm run dev, python app.py]
 ```
 
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
-
----
 
 ## Project Documentation
 
 ### For Software:
 
-#### Screenshots (Add at least 3)
+#### Screenshots 
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<p align="center">
+  <img src="./ss2.jpg" alt="Project Banner" width="100%">
+</p>
+*Home Page : search for the required destination*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+
+<p align="center">
+  <img src="./ss4.jpg" alt="Project Banner" width="100%">
+</p>
+*Community review page : reviews by other users are displayed and each user can rate their experience*
+
+
+<p align="center">
+  <img src="./ss5.jpeg" alt="Project Banner" width="100%">
+</p>
+*Dynamic heat map : shows areas according to the safety scores*
+
+
+<p align="center">
+  <img src="./ss7.jpeg" alt="Project Banner" width="100%">
+</p>
+*Emergency services : an SOS button is provided along with contact numbers of emergency services*
+
 
 #### Diagrams
 
 **System Architecture:**
 
 ![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+***System Architecture:**
+1. System Components & Tech Stack
+Frontend (Client-Side) - hera-xi.vercel.app
+
+Tech Stack: Most likely React.js or Next.js (Vercel is the creator of Next.js and it is the default standard for apps hosted there), styled with Tailwind CSS or similar component libraries.
+
+Role: Acts as the user interface for "HERA | Smart Travel Safety". It handles the presentation layer, capturing user inputs (like travel destinations, emergency contacts, or location tracking), rendering maps/safety alerts, and managing client-side state.
+
+Hosting: Vercel Global Edge Network (CDN), ensuring fast delivery of static assets (HTML, CSS, JS) and edge rendering.
+
+Backend (Server-Side) - hera-zd4e.vercel.app
+
+Tech Stack: Likely Node.js with Express.js, or a Next.js API route backend utilizing Vercel's Serverless Functions.
+
+Role: Acts as the central processing hub. It exposes RESTful APIs (or GraphQL) that the frontend consumes. It handles business logic, such as risk assessment algorithms, user authentication, processing SOS requests, and interacting with third-party APIs (e.g., Google Maps API, weather APIs, or global safety indexes).
+
+Hosting: Vercel Serverless Functions, which spin up dynamically to handle incoming API requests and scale down to zero when not in use.
+
+Database (Storage Layer)
+
+(Implicit Component): Since Vercel is stateless, the backend must connect to a cloud database. Given the ecosystem, this is usually MongoDB (Atlas), PostgreSQL (Supabase/Neon), or Firebase.
+
+Role: Stores persistent data like user profiles, saved travel itineraries, emergency contacts, and historical safety data.
+
+2. Data Flow
+User Interaction: A user interacts with the HERA frontend via their browser/mobile web (e.g., searching for a travel destination's safety rating).
+
+API Request: The frontend triggers an asynchronous HTTP request (via fetch or axios) to the backend endpoint (e.g., GET hera-zd4e.vercel.app/api/safety-info?location=Paris).
+
+Backend Processing:
+
+The Vercel API Gateway routes the request to a Serverless Function.
+
+The backend validates the request. If authentication is required (e.g., JWT token), it verifies the user's identity.
+
+The backend queries the database for user-specific data or calls external third-party APIs to fetch real-time travel safety metrics.
+
+Response: The backend aggregates this data, formats it into a JSON payload, and sends it back to the frontend.
+
+State Update & Render: The frontend receives the JSON response, updates its global state (e.g., using Redux, Context API, or React Query), and dynamically re-renders the UI to display the travel safety information to the user.
+
+3. Tech Stack Interaction (How they talk to each other)
+CORS (Cross-Origin Resource Sharing): Because the frontend (hera-xi) and backend (hera-zd4e) are on different subdomains, the backend is configured to accept cross-origin requests specifically from https://hera-xi.vercel.app.
+
+Communication Protocol: HTTPS over REST (or GraphQL). They exchange information strictly via JSON payloads.
+
+Authentication Flow: If users can log in, the backend likely issues a JWT (JSON Web Token) upon login. The frontend stores this token (in an HttpOnly cookie or LocalStorage) and attaches it to the Authorization header of subsequent API calls to hera-zd4e.vercel.app to prove the user's identity securely.
+
+Summary of the Architecture
+This is a standard microservices-oriented serverless architecture. By splitting the frontend and backend into two distinct Vercel deployments, the development team ensures that the UI can be updated and cached independently of the backend API, allowing for better scalability, easier debugging, and specialized performance optimization for the HERA Smart Travel Safety platform.
+
 
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+*The HERA ecosystem operates through a seamless integration of user intent, community data, and emergency infrastructure.
+
+1. User Entry & Geospatial Awareness
+Action: User lands on the dashboard.
+
+System: The React frontend initializes the "Kochi Safety Pulse" by fetching neighborhood safety metadata from the MongoDB database via the Flask API.
+
+Result: A high-level view of verified safe zones is rendered using Leaflet.js.
+
+2. Intelligent Query & Analysis
+Action: User enters a destination in the Power Search Bar.
+
+System: The frontend normalizes the input into a URL-friendly slug. The Flask backend queries the MongoDB collection for specific safety scores (Lighting, Police Presence, Crowd Density).
+
+Result: The user is redirected to a dynamic Location Analysis Page showing real-time safety metrics.
+
+3. Safe Logistics & Stay Selection
+Action: User explores "Safe Travel" routes or "Verified Stays."
+
+System: The app filters locations based on a "Pink-Verified" flag in the database.
+
+Result: Only high-rated, women-vetted accommodations and transit hubs are displayed to the user.
+
+4. Community Intelligence Loop (Input)
+Action: User submits a "Safety Pulse" review .
+
+System: Axios sends a POST request to the Flask server. The new data point is indexed in MongoDB.
+
+Result: The global safety score for that coordinate is updated instantly for all other users.
+
+5. Emergency Activation (The "Aura" Protocol)
+Action: User triggers the SOS Button.
+
+System: The app enters a High-Contrast Emergency State (Framer Motion animations).
+
+Result: It instantly fetches the user's geolocation and provides direct, low-latency links to Pink Police dispatch and medical services.*
 
 ---
 
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 #### Build Photos
 
@@ -133,134 +243,180 @@ List the key features of your project:
 
 ## Additional Documentation
 
+
 ### For Web Projects with Backend:
 
 #### API Documentation
 
-**Base URL:** `https://api.yourproject.com`
+**Base URL:** `http://localhost:5000`
+
+##### Authentication
+Include JWT token in header for protected endpoints:
+```
+Authorization: Bearer <access_token>
+```
+
+---
 
 ##### Endpoints
 
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
+**GET /**
+- **Description:** Health check endpoint to verify server is running
 - **Response:**
 ```json
 {
-  "status": "success",
-  "data": {}
+  "message": "HERA Backend Running (MongoDB)"
 }
 ```
 
-**POST /api/endpoint**
-- **Description:** [What it does]
+**POST /api/signup**
+- **Description:** Register a new user account
 - **Request Body:**
 ```json
 {
-  "field1": "value1",
-  "field2": "value2"
+  "email": "john@example.com",
+  "password": "securepassword123"
 }
 ```
-- **Response:**
+- **Response (201 Created):**
 ```json
 {
-  "status": "success",
-  "message": "Operation completed"
+  "message": "User created",
+  "user_id": "507f1f77bcf86cd799439011"
+}
+```
+- **Error Response (400):**
+```json
+{
+  "error": "Email and password required"
 }
 ```
 
-[Add more endpoints as needed...]
-
----
-
-### For Mobile Apps:
-
-#### App Flow Diagram
-
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
-
-#### Installation Guide
-
-**For Android (APK):**
-1. Download the APK from [Release Link]
-2. Enable "Install from Unknown Sources" in your device settings:
-   - Go to Settings > Security
-   - Enable "Unknown Sources"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Open the app and enjoy!
-
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
-
-**Building from Source:**
-```bash
-# For Android
-flutter build apk
-# or
-./gradlew assembleDebug
-
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
+**POST /api/login**
+- **Description:** Authenticate user and receive JWT token
+- **Request Body:**
+```json
+{
+  "email": "john@example.com",
+  "password": "securepassword123"
+}
+```
+- **Response (200):**
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+- **Error Response (401):**
+```json
+{
+  "error": "Invalid credentials"
+}
 ```
 
+**GET /api/locations**
+- **Description:** Retrieve all locations
+- **Response (200):**
+```json
+[
+  {
+    "_id": "507f1f77bcf86cd799439011",
+    "name": "Central Park",
+    "slug": "central-park",
+    "description": "A large public park in the center of Manhattan",
+    "created_at": "2024-02-22T10:30:00"
+  }
+]
+```
+
+**POST /api/locations**
+- **Description:** Add a new location
+- **Request Body:**
+```json
+{
+  "name": "Central Park",
+  "slug": "central-park",
+  "description": "A large public park in the center of Manhattan"
+}
+```
+- **Response (201 Created):**
+```json
+{
+  "message": "Location added",
+  "id": "507f1f77bcf86cd799439011"
+}
+```
+
+**GET /api/locations/{location_id}/reviews**
+- **Description:** Get all reviews for a specific location
+- **Parameters:**
+  - `location_id` (string): The MongoDB ID of the location
+- **Response (200):**
+```json
+[
+  {
+    "_id": "507f1f77bcf86cd799439012",
+    "location_id": "507f1f77bcf86cd799439011",
+    "user_id": "507f1f77bcf86cd799439010",
+    "text": "Great place to visit!",
+    "overall": 4.5,
+    "lighting": 4,
+    "transport": 5,
+    "crowd": 3,
+    "security": 4,
+    "verified": false,
+    "created_at": "2024-02-22T11:20:00"
+  }
+]
+```
+
+**POST /api/locations/{location_id}/reviews**
+- **Description:** Submit a review for a location (Requires Authentication)
+- **Parameters:**
+  - `location_id` (string): The MongoDB ID of the location
+- **Request Body:**
+```json
+{
+  "text": "Great place to visit!",
+  "overall": 4.5,
+  "lighting": 4,
+  "transport": 5,
+  "crowd": 3,
+  "security": 4
+}
+```
+- **Response (201 Created):**
+```json
+{
+  "message": "Review added",
+  "id": "507f1f77bcf86cd799439012"
+}
+```
+- **Error Response (401):**
+```json
+{
+  "error": "Missing Authorization Header"
+}
+```
+
+**POST /api/reviews/{review_id}/like**
+- **Description:** Like a review (Requires Authentication)
+- **Parameters:**
+  - `review_id` (string): The MongoDB ID of the review
+- **Response (201 Created):**
+```json
+{
+  "message": "Review liked"
+}
+```
+- **Error Response (400):**
+```json
+{
+  "error": "Already liked"
+}
+```
 ---
 
-### For Hardware Projects:
-
-#### Bill of Materials (BOM)
-
-| Component | Quantity | Specifications | Price | Link/Source |
-|-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
-
-**Total Estimated Cost:** ₹[Amount]
-
-#### Assembly Instructions
-
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
-
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
-
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
-
-**Step 4: [Continue for all steps...]**
-
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
-
----
 
 ### For Scripts/CLI Tools:
 
@@ -361,9 +517,22 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+[demo video link here : ](https://drive.google.com/drive/folders/1zBZXuxDQgyyR_-OXjntmPhvo-nSEKgw5?usp=sharing)]
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+*This video demonstrates the end-to-end user journey of the HERA safety ecosystem, highlighting our focus on reactive and proactive safety.
+Key Features Demonstrated:
+Dynamic Landing & Discovery: Showcasing the high-end Glassmorphic UI and the "Kochi Edition" safety overview.
+Intelligent Safety Search: A user typing a destination (e.g., "Fort Kochi") to trigger a real-time safety analysis.
+Safety Reports & Safe-Stays: Viewing community-vetted accommodations and neighborhood safety scores.
+Anonymous Pulse Reviews: Demonstrating how a user can  rate lighting and crowd safety to update the live heatmap.
+Zero-Latency SOS: Activating the "Emergency Aura" mode to simulate instant contact with the Pink Police and GPS broadcasting.
+
+The User Flow:
+Onboarding: The user enters the app and sees the "Safety Pulse" of Kochi.
+Navigation: The user searches for their destination and reviews the safest transit options.
+Validation: The user checks for "Verified Pink Stays" at their destination.
+Contribution: After arriving, the user contributes an anonymous review to help the community.
+Protection: A demonstration of the SOS widget providing a safety net throughout the journey.*
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
@@ -400,9 +569,8 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- Manna Grace Philip: [Specific contributions - Frontend development]
+- Gayathri J S: [Backend development, Database design]
 
 ---
 
